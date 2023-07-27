@@ -32,21 +32,21 @@ while order:
         print(f"- {size.capitalize()}: Rs.{price:}")
 
     # Ask for user input
-    selected_toppings = input("\nSelect your toppings (It should be comma-separated): ").split(" ")
-    selected_size = input("Select the size (small, medium, or large): ").lower()
+    selected_toppings = input("\nSelect your toppings (It should be comma-separated): ").split(",")
+    selected_size = input("Select the size (Small, Medium, or Large): ")
 
     # Calculate the total price
     for topping in selected_toppings:
         topping = topping.strip().lower()
         if topping in menu["toppings"]:
             total_price += menu["toppings"][topping]
-
+ 
     if selected_size in menu["sizes"]:
         total_price += menu["sizes"][selected_size]
     else:
         print("Invalid size selected!")
 
-    # Display the total price
+    # Display the total prices
     print(f"\nTotal price: Rs.{total_price:}")
 
     # Ask if the user wants to continue ordering

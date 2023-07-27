@@ -1,0 +1,4 @@
+Name of the customer is ghjkl
+Total bill of ghjkl is 1140
+pizza is Veg pizza
+Toppings is Olives
